@@ -1,0 +1,41 @@
+.container {
+  max-width: 150rem;
+  margin-inline: auto;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+}
+.content {
+  flex: 1;
+}
+.content-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem 0;
+  padding: 3rem;
+
+  @include media-query(tablet-landscape) {
+    padding: 1.5rem;
+  }
+  @include media-query(tablet-portrait) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @include media-query(small-phone) {
+    padding: 0;
+    margin: 3rem 0;
+  }
+
+  > * {
+    margin-inline: 3rem;
+
+    @include media-query(tablet-landscape) {
+      margin: 1.5rem;
+    }
+    @include media-query(phone) {
+      margin: 2rem 0;
+    }
+    @include media-query(small-phone) {
+      padding: 2rem;
+    }
+  }
+}

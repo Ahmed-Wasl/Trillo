@@ -1,0 +1,15 @@
+{
+  "name": "trillo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "github: Ahmed-Wasl",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "latest"
+  }
+}

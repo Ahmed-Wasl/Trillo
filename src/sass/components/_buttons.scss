@@ -1,0 +1,42 @@
+.btn {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.2rem;
+  text-decoration: none;
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+
+    @include media-query(tablet-landscape) {
+      font-size: 1.8rem;
+    }
+    @include media-query(tablet-portrait) {
+      font-size: 2.2rem;
+    }
+    @include media-query(phone) {
+      font-size: 3.5rem;
+    }
+    @include media-query(small-phone) {
+      font-size: 2.5rem;
+    }
+
+  &--hover:hover {
+    animation-name: scaling;
+    color: var(--color-black);
+    border-color: var(--color-black);
+    box-shadow: 0 0 6rem var(--color-grey-dark-3);
+    background-color: var(--color-grey-light-3);
+    @include transition(0.5s);
+  }
+
+  &--primary {
+    padding: 1.1rem 5rem;
+    color: var(--color-white);
+    background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  }
+  &--rounded {
+    @include border-radius(2rem);
+  }
+}

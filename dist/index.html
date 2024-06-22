@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charest="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>trillo &mdash; Your all-in-one booking app</title>
+    <!-- Favicon Page ⬇ -->
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Trillo/starter/img/favicon.png">
+    <!-- Render All Elements Normally ⬇ -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- Template CSS File ⬇ -->
+    <link rel="stylesheet" type="text/css" href="/index.5cd32be8.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-header">
+        <a href="/index.html" class="nav-header__logo-link">
+          <img src="https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Trillo/starter/img/logo.png" alt="Logo" class="nav-header__logo">
+        </a>
+        <form class="form" action="_self" method="get">
+          <input type="text" name="Search" id="input-search" class="form__search-input" placeholder="Search">
+          <button type="submit" class="form__submit-btn">
+            <i class="form__icon fa-2xl fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <ul class="nav-header__list">
+          <li class="nav-header__item">
+            <a href="#" class="nav-header__link">
+              <i class="nav-header__icon fa-2xl fa-solid fa-bookmark"></i>
+              <span class="nav-header__icon-notification" id="notification-bookmark">7</span>
+            </a>
+          </li>
+          <li class="nav-header__item">
+            <a href="#" class="nav-header__link">
+              <i class="nav-header__icon fa-2xl fa-solid fa-comments"></i>
+              <span class="nav-header__icon-notification" id="notification-messages">13</span>
+            </a>
+          </li>
+          <li class="nav-header__item">
+            <a href="#" class="nav-header__link nav-header__link--user">
+              <img src="https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Trillo/starter/img/user.jpg" class="nav-header__user-pic" alt="User profile picture" id="userPicture">
+              <p class="nav-header__user-name" id="userName">Jonas</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="content-body u-display-flex">
+        <nav class="nav-sidebar">
+          <button class="nav-sidebar__menu-btn">
+            <i class="nav-sidebar__menu-icon fa-solid fa-angles-right"></i>
+          </button>
+          <ul class="nav-sidebar__list">
+            <li class="nav-sidebar__item active">
+              <a href="#" class="nav-sidebar__link">
+                <i class="nav-sidebar__icon fa-solid fa-house"></i>
+                <p class="nav-sidebar__category">Hotel</p></a>
+            </li>
+            <li class="nav-sidebar__item">
+              <a href="#" class="nav-sidebar__link">
+                <i class="nav-sidebar__icon fa-solid fa-plane-departure"></i>
+                <p class="nav-sidebar__category">FLIGHT</p>
+              </a>
+            </li>
+            <li class="nav-sidebar__item">
+              <a href="#" class="nav-sidebar__link">
+                <i class="nav-sidebar__icon fa-solid fa-key"></i>
+                <p class="nav-sidebar__category">CAR RENTAL</p>
+              </a>
+            </li>
+            <li class="nav-sidebar__item">
+              <a href="#" class="nav-sidebar__link">
+                <i class="nav-sidebar__icon fa-regular fa-map"></i>
+                <p class="nav-sidebar__category">TOURS</p>
+              </a>
+            </li>
+            <div class="legal">&copy; 2017 by trillo. All rights reserved.</div>
+          </ul>
+        </nav>
+        <main class="content">
+          <div class="composition grid-col-3">
+            <img class="composition__img" src="https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Trillo/starter/img/hotel-1.jpg" alt="hotel picture">
+            <img class="composition__img" src="https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Trillo/starter/img/hotel-2.jpg" alt="hotel picture">
+            <img class="composition__img" src="https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Trillo/starter/img/hotel-3.jpg" alt="hotel picture">
+          </div>
+          <div class="content-info">
+            <div class="content-info__box">
+              <h1 class="content-info__heading">HOTEL LAS PALMAS</h1>
+              <div class="content-info__star-container">
+                <i class="content-info__star fa-solid fa-star fa-xl"></i>
+                <i class="content-info__star fa-solid fa-star fa-xl"></i>
+                <i class="content-info__star fa-solid fa-star fa-xl"></i>
+                <i class="content-info__star fa-solid fa-star fa-xl"></i>
+                <i class="content-info__star fa-solid fa-star fa-xl"></i>
+              </div>
+            </div>
+            <div class="content-info__box">
+              <a class="content-info__location btn btn--hover" href="https://maps.app.goo.gl/qp9i36GnmvZAxNqt7">
+                <i class="content-info__icon fa-solid fa-location-dot"></i>
+                Albufeira, Portugal
+              </a>
+              <div class="content-info__rate-box">
+                <p class="content-info__rate">8.6</p>
+                <p class="content-info__vote">429 VOTES</p>
+              </div>
+            </div>
+          </div>
+          <div class="content-main">
+            <div class="content-description">
+              <p class="content-description__para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                nulla ex illum aliquid velit iusto nesciunt assumenda,
+                repudiandae minus blanditiis, nostrum fuga expedita laborum
+                dolorem quae reprehenderit unde quidem recusandae?
+              </p>
+
+              <hr class="content-description__line">
+
+              <ul class="content-description__list">
+                <li class="content-description__item">
+                  <i class="content-description__icon-angle fa-solid fa-angle-right"></i>
+                  Close to the beach
+                </li>
+                <li class="content-description__item">
+                  <i class="content-description__icon-angle fa-solid fa-angle-right"></i>
+                  Free airport shuttle
+                </li>
+                <li class="content-description__item">
+                  <i class="content-description__icon-angle fa-solid fa-angle-right"></i>
+                  Air conditioning
+                </li>
+                <li class="content-description__item">
+                  <i class="content-description__icon-angle fa-solid fa-angle-right"></i>
+                  We speak all languages
+                </li>
+                <li class="content-description__item">
+                  <i class="content-description__icon-angle fa-solid fa-angle-right"></i>
+                  Breakfast included
+                </li>
+                <li class="content-description__item">
+                  <i class="content-description__icon-angle fa-solid fa-angle-right"></i>
+                  Free wifi in all rooms
+                </li>
+                <li class="content-description__item">
+                  <i class="content-description__icon-angle fa-solid fa-angle-right"></i>
+                  Pets allowed
+                </li>
+                <li class="content-description__item">
+                  <i class="content-description__icon-angle fa-solid fa-angle-right"></i>
+                  Perfect for families
+                </li>
+              </ul>
+
+              <hr class="content-description__line">
+
+              <div class="content-description__box-friend-list">
+                <p class="content-description__friend-details">
+                  Lucy and 3 other friends recommend this hotel.
+                </p>
+                <div class="content-description__friend-pictures">
+                  <img src="https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Trillo/starter/img/user-3.jpg" alt="friend profile picture" class="content-description__friend-picture"><img src="https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Trillo/starter/img/user-4.jpg" alt="friend profile picture" class="content-description__friend-picture"><img src="https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Trillo/starter/img/user-5.jpg" alt="friend profile picture" class="content-description__friend-picture"><img src="https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Trillo/starter/img/user-6.jpg" alt="friend profile picture" class="content-description__friend-picture">
+                </div>
+              </div>
+            </div>
+            <div class="comments">
+              <div class="comments__comment">
+                <p class="comments__para">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nobis, recusandae consequuntur. Cum nostrum consequuntur
+                  iusto, vitae quidem iure
+                </p>
+                <div class="comments__user-box">
+                  <div class="comments__user">
+                    <img src="https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Trillo/starter/img/user-1.jpg" alt="user profile picture" class="comments__user-pfp">
+                    <div class="comments__user-details">
+                      <p class="comments__user-name">NICK SMITH</p>
+                      <p class="comments__comment-date">Feb 23rd, 2017</p>
+                    </div>
+                  </div>
+                  <div class="comments__user-rate">7.8</div>
+                </div>
+              </div>
+              <div class="comments__comment">
+                <p class="comments__para">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nobis, recusandae consequuntur. Cum nostrum consequuntur
+                  iusto, vitae quidem iure
+                </p>
+                <div class="comments__user-box">
+                  <div class="comments__user">
+                    <img src="https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Trillo/starter/img/user-2.jpg" alt="user profile picture" class="comments__user-pfp">
+                    <div class="comments__user-details">
+                      <p class="comments__user-name">MARY THOMAS</p>
+                      <p class="comments__comment-date">Sep 13th, 2016</p>
+                    </div>
+                  </div>
+                  <div class="comments__user-rate">9.3</div>
+                </div>
+              </div>
+              <a href="#" class="comments__show btn btn--hover">Show all &rarr;</a>
+            </div>
+          </div>
+          <div class="content-footer">
+            <p class="content-footer__text">
+              GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!
+            </p>
+            <a href="#" class="btn btn--primary btn--rounded">BOOK NOW</a>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b7dea25cd1.js" crossorigin="anonymous"></script>
+    <script src="/index.e37f48ea.js" defer=""></script>
+  </body>
+</html>

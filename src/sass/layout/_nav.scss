@@ -1,0 +1,127 @@
+.nav-header {
+  height: 7rem;
+  display: flex;
+  position: sticky;
+  top: 0;
+  padding: 0 0 0 2.5rem;
+  background-color: var(--color-white);
+  box-shadow: 0 0 100rem var(--color-black);
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  border-bottom: 1px solid var(--color-grey-light-4);
+
+  @include media-query(tablet-portrait) {
+    height: 8rem;
+  }
+  @include media-query(phone) {
+    height: 11.5rem;
+  }
+
+  &__logo {
+    width: 6rem;
+
+    @include media-query(tablet-portrait) {
+      width: 6.5rem;
+    }
+  }
+
+  // nav links
+  &__list {
+    display: flex;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include transition(all 0.3s);
+
+    &:not(:last-child) {
+      width: 60px;
+    }
+
+    &:hover {
+      background-color: rgba(255, 51, 102, 0.2);
+    }
+  }
+  &__link {
+    position: relative; // for notification number
+    text-decoration: none;
+    cursor: pointer;
+
+    &--user {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+  }
+  &__icon {
+    color: var(--color-grey-dark-3);
+
+    @include media-query(tablet-landscape) {
+      font-size: 2.9rem !important;
+    }
+    @include media-query(tablet-portrait) {
+      font-size: 3rem !important;
+    }
+    @include media-query(phone) {
+      font-size: 4rem !important;
+    }
+  }
+  &__icon-notification {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    height: 1.7rem;
+    width: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+
+    @include border-radius(50%);
+
+    @include media-query(tablet-landscape) {
+      height: 2.2rem;
+      width: 2.2rem;
+      top: -2.3rem;
+      right: -1.3rem;
+    }
+    @include media-query(tablet-portrait) {
+      height: 2.5rem;
+      width: 2.5rem;
+      top: -2.3rem;
+      right: -1.3rem;
+    }
+    @include media-query(phone) {
+      font-size: 2rem;
+      height: 3.5rem;
+      width: 3.5rem;
+      top: -3rem;
+      right: -1.7rem;
+    }
+  }
+
+  &__user-pic {
+    width: 5rem;
+    @include border-radius(50%);
+    margin-right: 10px;
+
+    @include media-query(phone) {
+      width: 7.5rem;
+    }
+  }
+  &__user-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-grey-dark-2);
+
+    @include media-query(phone) {
+      font-size: 3.5rem;
+    }
+    @include media-query(small-phone) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,374 @@
+.content-info {
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem 0;
+  background: var(--color-white);
+
+  @include media-query(tablet-portrait) {
+    height: 11rem;
+  }
+  @include media-query(phone) {
+    height: max-content;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3.5rem;
+    gap: 4rem 0;
+  }
+  @include media-query(small-phone) {
+    margin-top: 2rem;
+    padding: 0;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+
+    @include media-query(phone) {
+      justify-content: space-between;
+    }
+    @include media-query(small-phone) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem 0;
+    }
+  }
+
+  &__heading {
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: var(--color-grey-dark-1);
+
+    @include media-query(tablet-landscape) {
+      font-size: 3.7rem;
+    }
+    @include media-query(tablet-portrait) {
+      font-size: 3.1rem;
+    }
+    @include media-query(phone) {
+      font-size: 5.7rem;
+    }
+    @include media-query(small-phone) {
+      font-size: 4.5rem;
+    }
+  }
+  &__star-container {
+    display: flex;
+    margin-left: 2rem;
+    font-size: 1rem;
+    color: var(--color-primary);
+
+    @include media-query(tablet-landscape) {
+      font-size: 1.4rem;
+    }
+    @include media-query(tablet-portrait) {
+      font-size: 1.8rem;
+    }
+    @include media-query(small-phone) {
+      font-size: 2rem;
+    }
+  }
+  &__star {
+    margin-inline: 0.1rem;
+  }
+
+  &__location {
+    @include media-query(phone) {
+      align-self: flex-end;
+    }
+    @include media-query(small-phone) {
+      align-self: auto;
+    }
+  }
+  &__icon {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-right: 0.8rem;
+
+    @include media-query(tablet-portrait) {
+      font-size: 2.7rem;
+    }
+    @include media-query(small-phone) {
+      font-size: 2.5rem;
+    }
+  }
+  &__rate-box {
+    width: 8.5rem;
+    text-align: center;
+    align-self: stretch;
+    padding-top: 0.5rem;
+    margin-left: 2.5rem;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+
+    @include media-query(tablet-portrait) {
+      width: 15rem;
+    }
+    @include media-query(small-phone) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  &__rate {
+    font-size: 2.7rem;
+    line-height: 1.4;
+
+    @include media-query(tablet-portrait) {
+      font-size: 4.6rem;
+    }
+  }
+  &__vote {
+    @include media-query(tablet-portrait) {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.content-description {
+  flex: 0 0 55%;
+  box-shadow: var(--shadow-dark);
+  background-color: var(--color-white);
+  padding: 3rem;
+
+  @include media-query(tablet-landscape) {
+    padding: 1.5rem;
+  }
+  @include media-query(tablet-portrait) {
+    padding: 5rem;
+  }
+  @include media-query(phone) {
+    padding: 3.5rem;
+  }
+  @include media-query(small-phone) {
+    padding: 10rem 0;
+  }
+
+  &__line {
+    height: 2px;
+    margin-block: 3.5rem;
+    background-color: var(--color-grey-light-4);
+    outline: none;
+    border: none;
+  }
+
+  &__para {
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    @include media-query(tablet-landscape) {
+      font-size: 2rem;
+    }
+    @include media-query(phone) {
+      font-size: 3rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.3rem 1rem;
+    height: 14.2rem;
+
+    @include media-query(tablet-landscape) {
+      height: 20rem;
+    }
+    @include media-query(tablet-portrait) {
+      height: 20rem;
+    }
+    @include media-query(phone) {
+      height: max-content;
+      gap: 2rem 1.2rem;
+    }
+  }
+  &__item {
+    font-size: 1.6rem;
+
+    @include media-query(tablet-landscape) {
+      font-size: 2.1rem;
+    }
+    @include media-query(phone) {
+      font-size: 3rem;
+    }
+  }
+  &__icon-angle {
+    font-size: 1.4rem;
+    margin-right: 0.7rem;
+    color: var(--color-primary-dark);
+
+    @include media-query(tablet-landscape) {
+      font-size: 2rem;
+    }
+  }
+
+  &__box-friend-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem 0;
+
+    @include media-query(phone) {
+      padding: 1rem 0.5rem;
+    }
+  }
+  &__friend-details {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-grey-dark-2);
+
+    @include media-query(tablet-landscape) {
+      font-size: 2.2rem;
+    }
+    @include media-query(phone) {
+      font-size: 3rem;
+    }
+  }
+  &__friend-pictures {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 30rem;
+  }
+  &__friend-picture {
+    position: absolute;
+    right: 0;
+    height: 5rem;
+    border: 0.4rem solid var(--color-white);
+    @include border-radius(50%);
+
+    @include media-query(tablet-landscape) {
+      border-width: 0.6rem;
+      height: 7.5rem;
+    }
+    @include media-query(phone) {
+      height: 9.5rem;
+    }
+
+    &:first-child {
+      right: 9.7rem;
+    }
+    &:nth-child(2) {
+      right: 6.7rem;
+    }
+    &:nth-child(3) {
+      right: 3.7rem;
+    }
+  }
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem 3rem;
+  flex: 1;
+
+  @include media-query(tablet-landscape) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__comment {
+    position: relative;
+    background-color: var(--color-white);
+    padding: 3rem;
+
+    @include media-query(tablet-landscape) {
+      padding: 2.2rem;
+    }
+    @include media-query(tablet-portrait) {
+      width: 45.6%;
+    }
+    @include media-query(phone) {
+      width: 100%;
+    }
+
+    &::before {
+      position: absolute;
+      content: "\f10d";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      top: -3rem;
+      left: 0;
+      font-size: 8rem;
+      color: var(--color-primary-dark);
+      opacity: 0.1;
+    }
+  }
+  &__para {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+
+    @include media-query(tablet-landscape) {
+      font-size: 2rem;
+      margin-bottom: 2.7rem;
+    }
+    @include media-query(phone) {
+      font-size: 3rem;
+    }
+    @include media-query(small-phone) {
+      font-size: 3rem;
+    }
+  }
+
+  &__user-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+  &__user-pfp {
+    height: 4rem;
+    @include border-radius(50%);
+
+    @include media-query(tablet-landscape) {
+      height: 5.5rem;
+    }
+    @include media-query(phone) {
+      height: 9rem;
+    }
+  }
+  &__user-details {
+    margin-left: 1.5rem;
+    font-weight: 600;
+  }
+  &__user-name {
+    font-size: 1.4rem;
+
+    @include media-query(tablet-landscape) {
+      font-size: 2rem;
+    }
+    @include media-query(phone) {
+      font-size: 3rem;
+    }
+  }
+  &__comment-date {
+    font-size: 1.1rem;
+    color: var(--color-grey-dark-3);
+
+    @include media-query(tablet-landscape) {
+      font-size: 1.5rem;
+    }
+    @include media-query(phone) {
+      font-size: 2.3rem;
+    }
+  }
+  &__user-rate {
+    font-size: 2.4rem;
+    color: var(--color-primary-dark);
+
+    @include media-query(tablet-landscape) {
+      font-size: 3.5rem;
+    }
+    @include media-query(phone) {
+      font-size: 5rem;
+    }
+  }
+
+}
